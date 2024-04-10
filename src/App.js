@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     // Fetch data from the JSON file
-    fetch('/data.json')
+    fetch('/public/data.json')
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
@@ -26,16 +26,40 @@ function App() {
           {/* Check if data is available before rendering */}
           {data && (
             <>
-              {data.map((category, index) => (
-                <div key={index}>
-                  <h3>{category.title}</h3>
-                  <p>{category.timeframes.daily.current}hrs</p>
-                  <p>Previous - {category.timeframes.daily.previous}hrs</p>
-                  <p>{category.timeframes.weekly.current}hrs</p>
-                  <p>Previous - {category.timeframes.weekly.previous}hrs</p>
-                  <p>{category.timeframes.monthly.current}hrs</p>
-                  <p>Previous - {category.timeframes.monthly.previous}hrs</p>
-                </div>
+              {/* Render Work section */}
+              <h3>Work</h3>
+              {data.work.map((entry, index) => (
+                <p key={index}>{entry}</p>
+              ))}
+
+              {/* Render Play section */}
+              <h3>Play</h3>
+              {data.play.map((entry, index) => (
+                <p key={index}>{entry}</p>
+              ))}
+
+              {/* Render Study section */}
+              <h3>Study</h3>
+              {data.study.map((entry, index) => (
+                <p key={index}>{entry}</p>
+              ))}
+
+              {/* Render Exercise section */}
+              <h3>Exercise</h3>
+              {data.exercise.map((entry, index) => (
+                <p key={index}>{entry}</p>
+              ))}
+
+              {/* Render Social section */}
+              <h3>Social</h3>
+              {data.social.map((entry, index) => (
+                <p key={index}>{entry}</p>
+              ))}
+
+              {/* Render Self Care section */}
+              <h3>Self Care</h3>
+              {data.selfCare.map((entry, index) => (
+                <p key={index}>{entry}</p>
               ))}
             </>
           )}
