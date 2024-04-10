@@ -11,8 +11,8 @@ $cards-gap: 15px;
 }
 @mixin card-style {
   border:0;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 20px;
@@ -23,7 +23,7 @@ $cards-gap: 15px;
 }
 @mixin card-back-style {
   border: 0;
-  border-radius: 8px;
+  border-radius: 12px;
   margin: 10px;
   width: 220px;
   height: 210px;
@@ -87,7 +87,6 @@ gap: 5px;
   margin: 0 auto;
   margin-top: 180px;
   margin-left: 400px;
-  background-color: #333;
 }
 .info-back{
 
@@ -108,4 +107,10 @@ background-color: hsl(235, 46%, 20%);
   .#{$card}-back {
     background-color: $color;
   }
+}
+.info{
+  width: 200px;
+  height: 250px;
+  border-radius: 8px;
+  background-color: hsl(246, 80%, 60%);
 }
