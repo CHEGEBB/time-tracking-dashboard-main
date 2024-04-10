@@ -1,5 +1,12 @@
 import React from "react";
 import "./index.scss";
+import WorkIcon from "./images/icon-work.svg";
+import PlayIcon from "./images/icon-play.svg";
+import StudyIcon from "./images/icon-study.svg";
+import ExerciseIcon from "./images/icon-exercise.svg";
+import SocialIcon from "./images/icon-social.svg";
+import SelfCareIcon from "./images/icon-self-care.svg";
+
 
 function App() {
   const profilePic = require("./images/image-jeremy.png");
@@ -47,18 +54,27 @@ function App() {
           <div className="weekly-report">
             <div className="row-one">
               <div className="work-back">
+              <div className="work-icon">
+                <img src={WorkIcon} alt="work" />
+              </div>
                 <div className="work-card">
                   <p>Work</p>
                   <p>{weeklyData.work}</p>
                 </div>
               </div>
               <div className="play-back">
+              <div className="play-icon">
+                <img src={PlayIcon} alt="play" />
+                </div>
                 <div className="play-card">
                   <p>Play</p>
                   <p>{weeklyData.play}</p>
                 </div>
               </div>
               <div className="study-back">
+              <div className="study-icon">
+              <img src={StudyIcon} alt="study" />
+              </div>
                 <div className="study-card">
                   <p>Study</p>
                   <p>{weeklyData.study}</p>
@@ -67,18 +83,27 @@ function App() {
             </div>
             <div className="row-two">
               <div className="exercise-back">
+              <div className="exercise-icon">
+              <img src={ExerciseIcon} alt="exercise" />
+              </div>
                 <div className="exercise-card">
                   <p>Exercise</p>
                   <p>{weeklyData.exercise}</p>
                 </div>
               </div>
               <div className="social-back">
+              <div className="social-icon">
+              <img src={SocialIcon} alt="social" />
+              </div>
                 <div className="social-card">
                   <p>Social</p>
                   <p>{weeklyData.social}</p>
                 </div>
               </div>
               <div className="self-back">
+              <div className="self-icon">
+              <img src={SelfCareIcon} alt="self-care" />
+              </div>
                 <div className="self-card">
                   <p>Self Care</p>
                   <p>{weeklyData.selfCare}</p>
