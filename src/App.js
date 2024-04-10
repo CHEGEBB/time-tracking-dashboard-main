@@ -61,6 +61,9 @@ function App() {
                 <div className="work-card">
                 <div className="activity">
                 <p>Work</p>
+                <div className="ellips">
+                  <img src ={EllipsIcon} alt="exercise" />
+                </div>
                 </div>
                   <div className="hours">
                   <p>{weeklyData.work}</p>
@@ -75,6 +78,9 @@ function App() {
                 <div className="play-card">
                 <div className="activity">
                 <p>Play</p>
+                <div className="ellips">
+                  <img src ={EllipsIcon} alt="exercise" />
+                </div>
                 </div>
                   <div className="hours">
                   <p>{weeklyData.play}</p>
@@ -89,6 +95,9 @@ function App() {
                 <div className="study-card">
                 <div className="activity">
                 <p>Study</p>
+                <div className="ellips">
+                  <img src ={EllipsIcon} alt="exercise" />
+                </div>
                 </div>
                 <div className="hours">
                 <p>{weeklyData.study}</p>
