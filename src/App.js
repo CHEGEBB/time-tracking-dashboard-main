@@ -38,8 +38,9 @@ function App() {
           
           {/* Render Weekly Report */}
           <div className="weekly-report">
-            <div className="report-item">
-              <p>Work</p>
+            <div className="row-one"></div>
+            <div className="work-card">
+            <p>Work</p>
               <p>{weeklyData.work}</p>
             </div>
             <div className="report-item">
