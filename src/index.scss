@@ -23,9 +23,8 @@ body{
   flex-direction: $Cards-flex-direction;
 }
 .weekly-report{
-  font-family: $font-family;
-  display: $Cards-display;
-  flex-direction: $Cards-flex-direction;
+display: flex;
+flex-direction: column;
 
 }
 .row-one{
@@ -35,4 +34,14 @@ body{
 .row-two{
   display:$Cards-display;
   flex-direction: $Cards-flex-direction;
+}
+.tracking-dashboard{
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 250px;
+  background-color: #333;
 }
