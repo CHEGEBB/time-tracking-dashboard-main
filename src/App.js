@@ -121,7 +121,10 @@ function App() {
               </div>
                 <div className="social-card">
                 <div className="activity">
-                  <p>Social</p>
+                <div className="">
+                <p>Social</p>
+                </div>
+                  
                 </div>
                 <div className="hours">
                   <p>{weeklyData.social}</p>
