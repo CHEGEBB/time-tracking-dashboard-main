@@ -51,6 +51,7 @@ function App() {
               <p>Study</p>
               <p>{weeklyData.study}</p>
             </div>
+            <div className="row-two">
             <div className="report-item">
               <p>Exercise</p>
               <p>{weeklyData.exercise}</p>
@@ -63,6 +64,8 @@ function App() {
               <p>Self Care</p>
               <p>{weeklyData.selfCare}</p>
             </div>
+            </div>
+           
           </div>
         </div>
       </div>
