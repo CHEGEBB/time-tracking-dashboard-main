@@ -58,8 +58,13 @@ function App() {
                 <img src={WorkIcon} alt="work" />
               </div>
                 <div className="work-card">
-                  <p>Work</p>
+                <div className="activity">
+                <p>Work</p>
+                </div>
+                  <div className="hours">
                   <p>{weeklyData.work}</p>
+                  </div>
+                  
                 </div>
               </div>
               <div className="play-back">
@@ -67,8 +72,13 @@ function App() {
                 <img src={PlayIcon} alt="play" />
                 </div>
                 <div className="play-card">
-                  <p>Play</p>
+                <div className="activity">
+                <p>Play</p>
+                </div>
+                  <div className="hours">
                   <p>{weeklyData.play}</p>
+                  </div>
+                  
                 </div>
               </div>
               <div className="study-back">
@@ -76,8 +86,12 @@ function App() {
               <img src={StudyIcon} alt="study" />
               </div>
                 <div className="study-card">
-                  <p>Study</p>
-                  <p>{weeklyData.study}</p>
+                <div className="activity">
+                <p>Study</p>
+                </div>
+                <div className="hours">
+                <p>{weeklyData.study}</p>
+                </div>
                 </div>
               </div>
             </div>
@@ -87,8 +101,14 @@ function App() {
               <img src={ExerciseIcon} alt="exercise" />
               </div>
                 <div className="exercise-card">
-                  <p>Exercise</p>
-                  <p>{weeklyData.exercise}</p>
+                <div className="activity">
+                <p>Exercise</p>
+                </div>
+                <div className="hours">
+                <p>{weeklyData.exercise}</p>
+                </div>
+                  
+                  
                 </div>
               </div>
               <div className="social-back">
