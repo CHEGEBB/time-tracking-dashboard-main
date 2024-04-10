@@ -52,11 +52,11 @@ function App() {
               <p>{weeklyData.study}</p>
             </div>
             <div className="row-two">
-            <div className="report-item">
+            <div className="exercise-card">
               <p>Exercise</p>
               <p>{weeklyData.exercise}</p>
             </div>
-            <div className="report-item">
+            <div className="social-card">
               <p>Social</p>
               <p>{weeklyData.social}</p>
             </div>
