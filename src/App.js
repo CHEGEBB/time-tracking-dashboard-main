@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './index.scss';
 
 function App() {
   const profilePic = require('./images/image-jeremy.png');
-  const [data, setData] = useState(null);
 
-  useEffect(() => {
-    // Fetch data from the JSON file
-    fetch('/public/data.json')
-      .then(response => response.json())
-      .then(data => setData(data))
-      .catch(error => console.error('Error fetching data:', error));
-  }, []);
+  // Hardcoded data for weekly report
+  const weeklyData = {
+    work: '32hrs',
+    play: '10hrs',
+    study: '4hrs',
+    exercise: '4hrs',
+    social: '5hrs',
+    selfCare: '2hrs',
+  };
 
   return (
     <div className="App">
@@ -23,46 +24,34 @@ function App() {
           <h1>Report for</h1>
           <h2>Jeremy Robson</h2>
           
-          {/* Check if data is available before rendering */}
-          {data && (
-            <>
-              {/* Render Work section */}
-              <h3>Work</h3>
-              {data.work.map((entry, index) => (
-                <p key={index}>{entry}</p>
-              ))}
-
-              {/* Render Play section */}
-              <h3>Play</h3>
-              {data.play.map((entry, index) => (
-                <p key={index}>{entry}</p>
-              ))}
-
-              {/* Render Study section */}
-              <h3>Study</h3>
-              {data.study.map((entry, index) => (
-                <p key={index}>{entry}</p>
-              ))}
-
-              {/* Render Exercise section */}
-              <h3>Exercise</h3>
-              {data.exercise.map((entry, index) => (
-                <p key={index}>{entry}</p>
-              ))}
-
-              {/* Render Social section */}
-              <h3>Social</h3>
-              {data.social.map((entry, index) => (
-                <p key={index}>{entry}</p>
-              ))}
-
-              {/* Render Self Care section */}
-              <h3>Self Care</h3>
-              {data.selfCare.map((entry, index) => (
-                <p key={index}>{entry}</p>
-              ))}
-            </>
-          )}
+          {/* Render Weekly Report */}
+          <div className="weekly-report">
+            <h3>Weekly Report</h3>
+            <div className="report-item">
+              <p>Work</p>
+              <p>{weeklyData.work}</p>
+            </div>
+            <div className="report-item">
+              <p>Play</p>
+              <p>{weeklyData.play}</p>
+            </div>
+            <div className="report-item">
+              <p>Study</p>
+              <p>{weeklyData.study}</p>
+            </div>
+            <div className="report-item">
+              <p>Exercise</p>
+              <p>{weeklyData.exercise}</p>
+            </div>
+            <div className="report-item">
+              <p>Social</p>
+              <p>{weeklyData.social}</p>
+            </div>
+            <div className="report-item">
+              <p>Self Care</p>
+              <p>{weeklyData.selfCare}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
