@@ -60,7 +60,7 @@ function App() {
               <p>Social</p>
               <p>{weeklyData.social}</p>
             </div>
-            <div className="report-item">
+            <div className="self-card">
               <p>Self Care</p>
               <p>{weeklyData.selfCare}</p>
             </div>
