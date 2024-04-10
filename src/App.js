@@ -124,7 +124,9 @@ function App() {
                 <div className="">
                 <p>Social</p>
                 </div>
-                  
+                <div className="ellips">
+                  <img src ={EllipsIcon} alt="exercise" />
+                </div>
                 </div>
                 <div className="hours">
                   <p>{weeklyData.social}</p>
@@ -138,6 +140,9 @@ function App() {
                 <div className="self-card">
                 <div className="activity">
                 <p>Self Care</p>
+                <div className="ellips">
+                  <img src ={EllipsIcon} alt="exercise" />
+                </div>
                 </div>
                 <div className="hours">
                 <p>{weeklyData.selfCare}</p>
