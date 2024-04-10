@@ -6,6 +6,7 @@ import StudyIcon from "./images/icon-study.svg";
 import ExerciseIcon from "./images/icon-exercise.svg";
 import SocialIcon from "./images/icon-social.svg";
 import SelfCareIcon from "./images/icon-self-care.svg";
+import EllipsIcon from "./images/icon-ellipsis.svg";
 
 
 function App() {
@@ -102,7 +103,12 @@ function App() {
               </div>
                 <div className="exercise-card">
                 <div className="activity">
+                <div className="ex">
                 <p>Exercise</p>
+                </div>
+                <div className="ellips">
+                  <img src ={EllipsIcon} alt="exercise" />
+                </div>
                 </div>
                 <div className="hours">
                 <p>{weeklyData.exercise}</p>
