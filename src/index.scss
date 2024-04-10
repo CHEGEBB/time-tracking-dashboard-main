@@ -10,7 +10,7 @@ $cards-gap: 15px;
   border: $width solid $color;
 }
 @mixin card-style {
-  border: 1px solid #ccc;
+  border:0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 10px;
@@ -22,7 +22,7 @@ $cards-gap: 15px;
   background-color: hsl(235, 46%, 20%);
 }
 @mixin card-back-style {
-  border: 1px solid #ccc;
+  border: 0;
   border-radius: 8px;
   margin: 10px;
   width: 220px;
