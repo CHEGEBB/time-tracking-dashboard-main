@@ -107,8 +107,6 @@ function App() {
                 <div className="hours">
                 <p>{weeklyData.exercise}</p>
                 </div>
-                  
-                  
                 </div>
               </div>
               <div className="social-back">
@@ -116,8 +114,12 @@ function App() {
               <img src={SocialIcon} alt="social" />
               </div>
                 <div className="social-card">
+                <div className="activity">
                   <p>Social</p>
+                </div>
+                <div className="hours">
                   <p>{weeklyData.social}</p>
+                </div>
                 </div>
               </div>
               <div className="self-back">
