@@ -127,8 +127,12 @@ function App() {
               <img src={SelfCareIcon} alt="self-care" />
               </div>
                 <div className="self-card">
-                  <p>Self Care</p>
-                  <p>{weeklyData.selfCare}</p>
+                <div className="activity">
+                <p>Self Care</p>
+                </div>
+                <div className="hours">
+                <p>{weeklyData.selfCare}</p>
+                </div> 
                 </div>
               </div>
             </div>
