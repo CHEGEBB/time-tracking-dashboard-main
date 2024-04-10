@@ -30,9 +30,15 @@ function App() {
               <h1>Report for</h1>
               <h2>Jeremy Robson</h2>
               <div className="times">
-                <p>{Daily}</p>
-                <p>{Weekly}</p>
-                <p>{Monthly}</p>
+              <div className="daily">
+                {Daily}
+              </div>
+              <div className="weekly">
+                {Weekly}
+              </div>
+              <div className="monthly">
+                {Monthly}
+              </div>
               </div>
             </div>
           </div>
