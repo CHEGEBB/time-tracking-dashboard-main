@@ -45,7 +45,7 @@ body{
   margin-left: 30px;
 display: flex;
 flex-direction: column;
-gap: $cards-gap;
+gap: 5px;
 
 
 }
@@ -58,6 +58,7 @@ gap: $cards-gap;
   display:$Cards-display;
   flex-direction: $Cards-flex-direction;
   gap: $cards-gap;
+  margin-top: -30px;
 }
 .tracking-dashboard{
   width: 1200px;
@@ -71,7 +72,7 @@ background-color: aquamarine;
 margin-left: 20px;
 margin-top: 40px;
 width: 200px;
-height: 400px;
+height: 450px;
 }
 .work-card, .play-card, .study-card, .exercise-card, .social-card, .self-card {
   @include card-style;
