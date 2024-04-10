@@ -5,7 +5,7 @@ $font-size:1.8rem;
 $font-family: 'DM Sans', sans-serif;
 $Cards-display: flex;
 $Cards-flex-direction: row;
-$cards-gap: 30px;
+$cards-gap: 15px;
 @mixin borderMixin($width, $color) {
   border: $width solid $color;
 }
@@ -15,6 +15,8 @@ $cards-gap: 30px;
   padding: 20px;
   margin: 10px;
   width: 220px;
+  height: 210px;
+  margin-top: 40px;
 }
 
 
@@ -69,7 +71,7 @@ background-color: aquamarine;
 margin-left: 20px;
 margin-top: 40px;
 width: 200px;
-height: 500px;
+height: 400px;
 }
 .work-card, .play-card, .study-card, .exercise-card, .social-card, .self-card {
   @include card-style;
