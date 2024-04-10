@@ -19,9 +19,10 @@ $info-font-family: 'Rubik', sans-serif;
   padding: 20px;
   width: 220px;
   height:170px;
-  margin-top: -10px;
+  margin-top: 40px;
   background-color: hsl(235, 46%, 20%);
-  z-index: 3;
+  z-index: 1;
+  position: relative;
 }
 @mixin card-back-style {
   border: 0;
@@ -30,6 +31,7 @@ $info-font-family: 'Rubik', sans-serif;
   width: 220px;
   height: 210px;
   margin-top: 40px;
+  z-index: -1;
   
   
 }
@@ -158,14 +160,12 @@ background-color: hsl(235, 46%, 20%);
   font-family:$info-font-family;
   font-weight: 300;
 }
-.work-icon, .play-icon, .study-icon, .exercise-icon, .social-icon, .self-icon{
-  z-index: -1;
-}
 .work-icon img, .play-icon img, .study-icon img, .exercise-icon img, .social-icon img, .self-icon img{
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin-left: 150px;
-  z-index: -1;
+  z-index: 0;
+  position: absolute;
 }
 .hours p{
   font-size: 45px;
