@@ -6,7 +6,9 @@ import './components/dashboard.scss';
 function App() {
   return (
     <div className="App">
-      <Dashboard />
+    <Dashboard />
+
+      {/* <Dashboard /> */}
     </div>
   );
 }
