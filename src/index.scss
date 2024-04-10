@@ -11,11 +11,15 @@ $cards-gap: 15px;
 }
 @mixin card-style {
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   padding: 20px;
   width: 220px;
   height:170px;
   margin-top: 40px;
+  background-color: hsl(235, 46%, 20%);
 }
 @mixin card-back-style {
   border: 1px solid #ccc;
