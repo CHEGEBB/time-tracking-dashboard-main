@@ -21,11 +21,11 @@ function App() {
   return (
     <div className="App">
       <div className="tracking-dashboard">
+        <div className="tracking-content">
+        <div className="info">
         <div className="profile">
           <img src={profilePic} alt="profile" />
         </div>
-        <div className="tracking-content">
-        <div className="info">
         <h1>Report for</h1>
           <h2>Jeremy Robson</h2>
           <div className="times">
