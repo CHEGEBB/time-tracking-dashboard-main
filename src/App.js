@@ -43,7 +43,7 @@ function App() {
             <p>Work</p>
               <p>{weeklyData.work}</p>
             </div>
-            <div className="report-item">
+            <div className="play-card">
               <p>Play</p>
               <p>{weeklyData.play}</p>
             </div>
