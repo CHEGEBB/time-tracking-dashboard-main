@@ -5,9 +5,12 @@ $font-size:1.8rem;
 $font-family: 'DM Sans', sans-serif;
 $Cards-display: flex;
 $Cards-flex-direction: row;
+$cards-gap: 50px;
 @mixin borderMixin($width, $color) {
   border: $width solid $color;
 }
+
+
 body{
   background-color: $background-color;
   color: $color;
@@ -23,8 +26,11 @@ body{
   flex-direction: $Cards-flex-direction;
 }
 .weekly-report{
+  margin-left: 50px;
 display: flex;
-flex-direction: column;
+flex-direction: row;
+gap: $cards-gap;
+
 
 }
 .row-one{
@@ -36,8 +42,6 @@ flex-direction: column;
   flex-direction: $Cards-flex-direction;
 }
 .tracking-dashboard{
-  display: flex;
-  flex-direction: column;
   width: 900px;
   height: 500px;
   margin: 0 auto;
