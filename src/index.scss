@@ -3,7 +3,9 @@ $background-color:hsl(226, 43%, 10%);
 $color:hsl(0, 0%, 100%);
 $font-size:1.8rem;
 $font-family: 'DM Sans', sans-serif;
-
+@mixin borderMixin($width, $color) {
+  border: $width solid $color;
+}
 body{
   background-color: $background-color;
   color: $color;
@@ -12,4 +14,5 @@ body{
   border-radius: 50%;
   width: 100px;
   height: 100px;
+  @include borderMixin(3px, white);
 }
