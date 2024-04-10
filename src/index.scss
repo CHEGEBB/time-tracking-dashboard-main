@@ -3,6 +3,8 @@ $background-color:hsl(226, 43%, 10%);
 $color:hsl(0, 0%, 100%);
 $font-size:1.8rem;
 $font-family: 'DM Sans', sans-serif;
+$Cards-display: flex;
+$Cards-flex-direction: row;
 @mixin borderMixin($width, $color) {
   border: $width solid $color;
 }
