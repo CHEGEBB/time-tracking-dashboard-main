@@ -14,7 +14,7 @@ $cards-gap: 50px;
   border-radius: 8px;
   padding: 20px;
   margin: 10px;
-  width: calc(33.33% - 20px);
+  width: 220px;
 }
 
 
@@ -58,8 +58,8 @@ gap: $cards-gap;
   gap: $cards-gap;
 }
 .tracking-dashboard{
-  width: 900px;
-  height: 500px;
+  width: 1200px;
+  height: 600px;
   margin: 0 auto;
   margin-top: 250px;
   background-color: #333;
