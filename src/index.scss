@@ -54,8 +54,8 @@ body{
 }
 .profile img{
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   @include borderMixin(3px, white);
 }
 .tracking-content{
@@ -115,6 +115,29 @@ background-color: hsl(235, 46%, 20%);
   background-color: hsl(246, 80%, 60%);
 }
 .times{
-  margin-top:150px;
+  margin-top:100px;
   margin-left: 20px;
+  display: $Cards-display;
+  flex-direction: column;
+  gap: 10px;
+  font-family: $font-family;
+}
+.info h1{
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+
+}
+.info p{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.info h2{
+  font-size: 2.5rem;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
 }
