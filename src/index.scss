@@ -74,6 +74,7 @@ margin-left: 20px;
 margin-top: 40px;
 width: 200px;
 height: 450px;
+border-radius: 8px;
 }
 .work-card, .play-card, .study-card, .exercise-card, .social-card, .self-card {
   @include card-style;
