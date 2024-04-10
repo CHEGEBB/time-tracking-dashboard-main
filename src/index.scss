@@ -91,3 +91,6 @@ background-color: crimson;
 .work-back, .play-back, .study-back, .exercise-back, .social-back, .self-back {
   @include card-back-style;
 }
+.work-back{
+  background-color: hsl(15, 100%, 70%);
+}
