@@ -6,6 +6,7 @@ $font-family: 'DM Sans', sans-serif;
 $Cards-display: flex;
 $Cards-flex-direction: row;
 $cards-gap: 15px;
+$info-font-family: 'Rubik', sans-serif;
 @mixin borderMixin($width, $color) {
   border: $width solid $color;
 }
@@ -56,6 +57,8 @@ body{
   border-radius: 50%;
   width: 70px;
   height: 70px;
+  margin-top: 30px;
+  margin-left: 30px;
   @include borderMixin(3px, white);
 }
 .tracking-content{
@@ -94,7 +97,7 @@ margin-left: 20px;
 margin-top: 40px;
 width: 250px;
 height: 450px;
-border-radius: 8px;
+border-radius: 12px;
 background-color: hsl(235, 46%, 20%);
 }
 .work-card, .play-card, .study-card, .exercise-card, .social-card, .self-card {
@@ -111,7 +114,7 @@ background-color: hsl(235, 46%, 20%);
 .info{
   width: 250px;
   height: 300px;
-  border-radius: 8px;
+  border-radius: 12px;
   background-color: hsl(246, 80%, 60%);
 }
 .times{
@@ -125,19 +128,15 @@ background-color: hsl(235, 46%, 20%);
 .info h1{
   font-size: 18px;
   margin-top: 10px;
-  margin-left: 10px;
-  font-family: 'Rubik', sans-serif;
+  margin-left: 30px;
+  font-family:$info-font-family;
   font-weight: 300;
 
-}
-.info p{
-  margin-top: 10px;
-  margin-left: 10px;
 }
 .info h2{
   font-size: 2.5rem;
   margin-top: 10px;
-  margin-left: 10px;
-  font-family: 'Rubik', sans-serif;
+  margin-left: 30px;
+  font-family:$info-font-family;
   font-weight: 300;
 }
