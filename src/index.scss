@@ -136,10 +136,11 @@ background-color: hsl(235, 46%, 20%);
   gap: 10px;
   font-family: $font-family;
   font-size: 18px;
+  color: hsl(236, 100%, 87%);
 }
 .daily:hover, .weekly:hover, .monthly:hover{
   cursor: pointer;
-  color: hsl(236, 100%, 87%);
+  color: #fff;
 }
 .info h1{
   font-size: 18px;
