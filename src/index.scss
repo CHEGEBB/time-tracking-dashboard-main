@@ -167,8 +167,15 @@ background-color: hsl(235, 46%, 20%);
   z-index: -1;
 }
 .hours p{
-  font-size: 40px;
+  font-size: 45px;
   font-family:$info-font-family;
   font-weight: 300;
+  margin-top: 20px;
 
+}
+.activity p{
+  font-size: 18px;
+  font-family:$info-font-family;
+  font-weight: 300;
+  margin-top: 10px;
 }
