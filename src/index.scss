@@ -9,6 +9,20 @@ $cards-gap: 50px;
 @mixin borderMixin($width, $color) {
   border: $width solid $color;
 }
+@mixin card-style {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
 body{
@@ -28,7 +42,7 @@ body{
 .weekly-report{
   margin-left: 50px;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 gap: $cards-gap;
 
 
@@ -36,10 +50,12 @@ gap: $cards-gap;
 .row-one{
   display:$Cards-display;
   flex-direction: $Cards-flex-direction;
+  gap: $cards-gap;
 }
 .row-two{
   display:$Cards-display;
   flex-direction: $Cards-flex-direction;
+  gap: $cards-gap;
 }
 .tracking-dashboard{
   width: 900px;
@@ -52,4 +68,7 @@ gap: $cards-gap;
 background-color: aquamarine;
 margin-left: 20px;
 
+}
+.work-card, .play-card, .study-card, .exercise-card, .social-card, .self-card {
+  @include card-style;
 }
