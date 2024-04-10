@@ -6,7 +6,7 @@ import './components/dashboard.scss';
 function App() {
   return (
     <div className="App">
-      <Dashboard /> {/* Use correct case for component */}
+      <Dashboard />
     </div>
   );
 }
