@@ -19,6 +19,12 @@ body{
   @include borderMixin(3px, white);
 }
 .tracking-content{
-  display: flex;
-  flex-direction: row;
+  display: $Cards-display;
+  flex-direction: $Cards-flex-direction;
+}
+.weekly-report{
+  font-family: $font-family;
+  display: $Cards-display;
+  flex-direction: $Cards-flex-direction;
+
 }
