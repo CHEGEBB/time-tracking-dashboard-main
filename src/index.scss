@@ -16,3 +16,7 @@ body{
   height: 100px;
   @include borderMixin(3px, white);
 }
+.tracking-content{
+  display: flex;
+  flex-direction: row;
+}
