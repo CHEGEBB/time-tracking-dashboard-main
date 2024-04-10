@@ -89,14 +89,14 @@ gap: 5px;
   margin-left: 400px;
   background-color: #333;
 }
-.info{
+.info-back{
 
 margin-left: 20px;
 margin-top: 40px;
 width: 200px;
 height: 450px;
 border-radius: 8px;
-background-color: crimson;
+background-color: hsl(235, 46%, 20%);
 }
 .work-card, .play-card, .study-card, .exercise-card, .social-card, .self-card {
   @include card-style;

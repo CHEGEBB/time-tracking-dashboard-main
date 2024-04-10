@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <div className="tracking-dashboard">
         <div className="tracking-content">
-        <div className="info">
+        <div className="info-back">
         <div className="profile">
           <img src={profilePic} alt="profile" />
         </div>
