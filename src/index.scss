@@ -5,7 +5,7 @@ $font-size:1.8rem;
 $font-family: 'DM Sans', sans-serif;
 $Cards-display: flex;
 $Cards-flex-direction: row;
-$cards-gap: 50px;
+$cards-gap: 30px;
 @mixin borderMixin($width, $color) {
   border: $width solid $color;
 }
@@ -40,7 +40,7 @@ body{
   flex-direction: $Cards-flex-direction;
 }
 .weekly-report{
-  margin-left: 50px;
+  margin-left: 30px;
 display: flex;
 flex-direction: column;
 gap: $cards-gap;
@@ -67,7 +67,9 @@ gap: $cards-gap;
 .info{
 background-color: aquamarine;
 margin-left: 20px;
-
+margin-top: 40px;
+width: 200px;
+height: 500px;
 }
 .work-card, .play-card, .study-card, .exercise-card, .social-card, .self-card {
   @include card-style;
