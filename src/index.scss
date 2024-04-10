@@ -83,6 +83,7 @@ margin-top: 40px;
 width: 200px;
 height: 450px;
 border-radius: 8px;
+background-color: crimson;
 }
 .work-card, .play-card, .study-card, .exercise-card, .social-card, .self-card {
   @include card-style;
