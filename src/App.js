@@ -14,6 +14,10 @@ function App() {
     selfCare: '2hrs',
   };
 
+  const Daily = 'Daily';
+  const Weekly = 'Weekly';
+  const Monthly = 'Monthly';
+
   return (
     <div className="App">
       <div className="tracking-dashboard">
@@ -21,12 +25,19 @@ function App() {
           <img src={profilePic} alt="profile" />
         </div>
         <div className="tracking-content">
-          <h1>Report for</h1>
+        <div className="info">
+        <h1>Report for</h1>
           <h2>Jeremy Robson</h2>
+          <div className="times">
+            <p>{Daily}</p>
+            <p>{Weekly}</p>
+            <p>{Monthly}</p>
+          </div>
+        </div>
+         
           
           {/* Render Weekly Report */}
           <div className="weekly-report">
-            <h3>Weekly Report</h3>
             <div className="report-item">
               <p>Work</p>
               <p>{weeklyData.work}</p>
