@@ -13,10 +13,18 @@ $cards-gap: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
+  width: 220px;
+  height:170px;
+  margin-top: 40px;
+}
+@mixin card-back-style {
+  border: 1px solid #ccc;
+  border-radius: 8px;
   margin: 10px;
   width: 220px;
   height: 210px;
   margin-top: 40px;
+  
 }
 
 
@@ -69,7 +77,7 @@ gap: 5px;
   background-color: #333;
 }
 .info{
-background-color: aquamarine;
+
 margin-left: 20px;
 margin-top: 40px;
 width: 200px;
@@ -78,4 +86,7 @@ border-radius: 8px;
 }
 .work-card, .play-card, .study-card, .exercise-card, .social-card, .self-card {
   @include card-style;
+}
+.work-back, .play-back, .study-back, .exercise-back, .social-back, .self-back {
+  @include card-back-style;
 }
