@@ -47,7 +47,7 @@ function App() {
               <p>Play</p>
               <p>{weeklyData.play}</p>
             </div>
-            <div className="report-item">
+            <div className="study-card">
               <p>Study</p>
               <p>{weeklyData.study}</p>
             </div>
