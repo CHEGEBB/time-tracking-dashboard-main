@@ -65,7 +65,6 @@ function App() {
               <p>{weeklyData.selfCare}</p>
             </div>
             </div>
-           
           </div>
         </div>
       </div>
