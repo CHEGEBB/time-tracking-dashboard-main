@@ -100,3 +100,8 @@ background-color: crimson;
 .work-back, .play-back, .study-back, .exercise-back, .social-back, .self-back {
   @include card-back-style;
 }
+@each $card, $color in $card-colors {
+  .#{$card}-back {
+    background-color: $color;
+  }
+}
