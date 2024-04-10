@@ -31,6 +31,12 @@ $info-font-family: 'Rubik', sans-serif;
   margin-top: 40px;
   
 }
+@mixin cardStyleHover {
+  &:hover {
+    cursor: pointer;
+    background-color: hsl(235, 45%, 61%);
+  }
+}
 
 $card-colors: (
   work: hsl(15, 100%, 70%),
@@ -103,6 +109,9 @@ background-color: hsl(235, 46%, 20%);
 .work-card, .play-card, .study-card, .exercise-card, .social-card, .self-card {
   @include card-style;
 }
+.work-card:hover, .play-card:hover, .study-card:hover, .exercise-card:hover, .social-card:hover, .self-card:hover {
+  @include cardStyleHover;
+}
 .work-back, .play-back, .study-back, .exercise-back, .social-back, .self-back {
   @include card-back-style;
 }
@@ -118,12 +127,17 @@ background-color: hsl(235, 46%, 20%);
   background-color: hsl(246, 80%, 60%);
 }
 .times{
-  margin-top:100px;
-  margin-left: 20px;
+  margin-top:80px;
+  margin-left: 40px;
   display: $Cards-display;
   flex-direction: column;
   gap: 10px;
   font-family: $font-family;
+  font-size: 18px;
+}
+.daily:hover, .weekly:hover, .monthly:hover{
+  cursor: pointer;
+  color: hsl(236, 100%, 87%);
 }
 .info h1{
   font-size: 18px;
@@ -131,6 +145,7 @@ background-color: hsl(235, 46%, 20%);
   margin-left: 30px;
   font-family:$info-font-family;
   font-weight: 300;
+  color: hsl(236, 100%, 87%);
 
 }
 .info h2{
