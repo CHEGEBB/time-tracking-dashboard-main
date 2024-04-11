@@ -4,11 +4,24 @@ import WorkIcon from '../images/icon-work.svg';
 
 const WorkComponent = ({ selectedTimeframe }) => {
   const [workData, setWorkData] = useState(null);
+  const transformTimeframe = (Selectedtimeframe) => {
+    switch (timeframe) {
+      case 'daily':
+        return 'Yesterday';
+      case 'weekly':
+        return 'Last week';
+      case 'monthly':
+        return 'Last month';
+      default:
+        return '';
+    }
+  };
+  
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:8000/');
+        const response = await fetch('http://localhost:8000/0');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -37,6 +50,10 @@ const WorkComponent = ({ selectedTimeframe }) => {
         </div>
         <div className="hours">
           <p>{workData && workData.current} hrs</p>
+          <div className="previous">
+          <p>Last {transformTimeframe(selectedTimeframe)} - {workData && workData.previous} hrs</p>
+          </div>
+          
         </div>
       </div>
     </div>
