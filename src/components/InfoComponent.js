@@ -6,6 +6,7 @@ import "../InfoComponent.scss";
 const InfoComponent = ({ selectedTimeframe, setSelectedTimeframe }) => {
   const handleNavClick = (option) => {
     setSelectedTimeframe(option);
+    console.log(selectedTimeframe);
   };
 
   return (
