@@ -4,20 +4,7 @@ import WorkIcon from '../images/icon-work.svg';
 
 const WorkComponent = ({ selectedTimeframe }) => {
   const [workData, setWorkData] = useState(null);
-  const transformTimeframe = (Selectedtimeframe) => {
-    switch (timeframe) {
-      case 'daily':
-        return 'Yesterday';
-      case 'weekly':
-        return 'Last week';
-      case 'monthly':
-        return 'Last month';
-      default:
-        return '';
-    }
-  };
-  
-
+ 
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -51,7 +38,7 @@ const WorkComponent = ({ selectedTimeframe }) => {
         <div className="hours">
           <p>{workData && workData.current} hrs</p>
           <div className="previous">
-          <p>Last {transformTimeframe(selectedTimeframe)} - {workData && workData.previous} hrs</p>
+          <p>Last {selectedTimeframe} - {workData && workData.previous} hrs</p>
           </div>
           
         </div>
