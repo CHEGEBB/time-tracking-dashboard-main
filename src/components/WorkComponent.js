@@ -13,10 +13,7 @@ const WorkComponent = ({ selectedTimeframe }) => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-      
-       
-        const timeframeData = data.timeframes[selectedTimeframe];
-        console.log(timeframeData);
+        const timeframeData = data.find((activity) => activity.title === 'Work');
         setWorkData(timeframeData);
       } catch (error) {
         console.error('Error fetching work data:', error);
