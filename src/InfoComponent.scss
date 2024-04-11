@@ -25,6 +25,9 @@ $info-font-family: 'Rubik', sans-serif;
   .side-nav {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    margin-left: 40px;
+    font-weight: $info-font-family;
   }
   
   .side-nav ul {
@@ -39,12 +42,13 @@ $info-font-family: 'Rubik', sans-serif;
   
   .side-nav a {
     text-decoration: none;
-    color: #000;
+    color:hsl(236, 100%, 87%);
     font-size: 18px;
+    font-family: $info-font-family;
   }
   
   .side-nav a:hover {
-    color: blue;
+    color: #fff;
     cursor: pointer;
   }
   .info h1{
