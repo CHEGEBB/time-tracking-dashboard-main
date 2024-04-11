@@ -1,5 +1,6 @@
 import { useState,useEffect } from "react";
 import EllipsIcon from "../images/icon-ellipsis.svg";
+import SelfCareIcon from "../images/icon-self-care.svg";
 
 
 const SelfCareComponent = () => {
@@ -22,7 +23,7 @@ const SelfCareComponent = () => {
     return ( 
         <div className = "self-back" >
             <div className = "self-icon" >
-                {/* Your self-care icon */}
+             <img src={SelfCareIcon} alt="self-care" />
             </div> 
             <div className = "self-card" >
                 <div className = "activity" >

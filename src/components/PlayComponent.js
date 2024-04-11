@@ -2,11 +2,11 @@ import React from "react";
 import { useState, useEffect } from "react";
 import EllipsIcon from "../images/icon-ellipsis.svg";
 import "../App";
+import PlayIcon from "../images/icon-play.svg";
 
 const PlayComponent = () => {
     const [playData, setPlayData] = useState({});
     useEffect(() => {
-        // Fetch data for play activity
         fetch("http://example.com/data.json")
             .then((response) => {
                 if (!response.ok) {
@@ -24,7 +24,7 @@ const PlayComponent = () => {
     return ( 
         <div className = "play-back" >
             <div className = "play-icon" >
-                {/* Your play icon */}
+                <img src = { PlayIcon } alt = "play" />
             </div> 
             <div className = "play-card" >
                 <div className = "activity" >

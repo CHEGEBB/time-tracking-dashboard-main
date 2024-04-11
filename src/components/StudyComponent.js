@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import EllipsIcon from "../images/icon-ellipsis.svg";
 import "../App";
+import StudyIcon from "../images/icon-study.svg";
 
 const StudyComponent = () => {
     const [studyData, setStudyData] = useState({});
@@ -22,7 +23,7 @@ const StudyComponent = () => {
     return ( 
         <div className = "study-back" >
             <div className = "study-icon" >
-                {/* Your study icon */}
+                <img src = { StudyIcon } alt = "study" />
             </div> 
             <div className = "study-card" >
                 <div className = "activity" >

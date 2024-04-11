@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import EllipsIcon from '../images/icon-ellipsis.svg';
 import '../App'
+import WorkIcon from '../images/icon-work.svg';
 
 const WorkComponent = () => {
   const [workData, setWorkData] = useState({});
@@ -23,7 +24,7 @@ const WorkComponent = () => {
   return (
     <div className="work-back">
       <div className="work-icon">
-        {/* Your work icon */}
+        <img src={WorkIcon} alt="work" />
       </div>
       <div className="work-card">
         <div className="activity">

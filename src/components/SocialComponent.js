@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import EllipsIcon from "../images/icon-ellipsis.svg";
 import '../App';
+import SocialIcon from "../images/icon-social.svg";
 
 const SocialComponent = () => {
     const [socialData, setSocialData]=useState({});
@@ -21,7 +22,7 @@ const SocialComponent = () => {
     return ( 
         <div className = "social-back" >
             <div className = "social-icon" >
-                {/* Your social icon */}
+                <img src = { SocialIcon } alt = "social" />
             </div> 
             <div className = "social-card" >
                 <div className = "activity" >
