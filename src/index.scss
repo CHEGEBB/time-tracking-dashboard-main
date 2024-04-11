@@ -191,3 +191,10 @@ background-color: hsl(235, 46%, 20%);
 .ellips:hover{
   cursor: pointer;
 }
+.previous p{
+  font-size: 15px;
+  font-family:$info-font-family;
+  font-weight: 400;
+  margin-top: 10px;
+  color: hsl(236, 100%, 87%);
+}
