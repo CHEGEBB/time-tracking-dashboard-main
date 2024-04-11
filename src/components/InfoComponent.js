@@ -11,14 +11,12 @@ const InfoComponent =() => {
         </div>
         <div className="profile-info">
           <div className="profile-name">
-            <h1>Jeremy Robson</h1>
-            <p>35</p>
-          </div>
-          <div className="profile-location">
-            <p>London</p>
+          <h1>Report for</h1>
+            <h2>Jeremy Robson</h2>
           </div>
         </div>
       </div>
     </div>
   );
 }
+export default InfoComponent;
