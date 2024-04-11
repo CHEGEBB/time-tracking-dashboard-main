@@ -1,8 +1,26 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import EllipsIcon from "../images/icon-ellipsis.svg";
 import "../App";
 
 const PlayComponent = () => {
+    const [playData, setPlayData] = useState({});
+    useEffect(() => {
+        // Fetch data for play activity
+        fetch("http://example.com/data.json")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            })
+            .then((data) => {
+                const play = data.find((activity) => activity.title === "Play");
+                setPlayData(play);
+            })
+            .catch((error) => console.error("Error fetching play data:", error));
+    }, []);
+
     return ( 
         <div className = "play-back" >
             <div className = "play-icon" >
