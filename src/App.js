@@ -5,6 +5,7 @@ import StudyComponent from './components/StudyComponent';
 import ExerciseComponent from './components/ExerciseComponent';
 import SocialComponent from './components/SocialComponent';
 import SelfCareComponent from './components/SelfCareComponent';
+import InfoComponent from './components/InfoComponent';
 
 function App() {
   // You can use axios to fetch the data here if needed
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <div className="tracking-dashboard">
         <div className="tracking-content">
+        <InfoComponent />
         <div className="weekly-report">
         <div className="row-one">
         <WorkComponent />
