@@ -6,7 +6,6 @@ import SelfCareIcon from "../images/icon-self-care.svg";
 const SelfCareComponent = () => {
     const [selfCareData, setSelfCareData] = useState({});
     useEffect(() => {
-        // Fetch data for self-care activity
         fetch("http://example.com/data.json")
             .then((response) => {
                 if (!response.ok) {
