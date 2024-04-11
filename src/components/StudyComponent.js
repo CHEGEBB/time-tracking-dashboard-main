@@ -32,7 +32,7 @@ const StudyComponent = () => {
                     </div> 
                 </div> 
                 <div className = "hours" >
-                    <p> 7hrs </p>
+                    <p> { studyData.timeframes && studyData.timeframes.weekly && studyData.timeframes.weekly.current } hrs </p>
                 </div> 
             </div> 
         </div>
