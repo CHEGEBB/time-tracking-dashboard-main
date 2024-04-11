@@ -20,11 +20,11 @@ const SelfCareComponent = () => {
             .catch((error) => console.error("Error fetching self-care data:", error));
     }, []);
     return ( 
-        <div className = "self-care-back" >
-            <div className = "self-care-icon" >
+        <div className = "self-back" >
+            <div className = "self-icon" >
                 {/* Your self-care icon */}
             </div> 
-            <div className = "self-care-card" >
+            <div className = "self-card" >
                 <div className = "activity" >
                     <p> Self Care </p> 
                     <div className = "ellips" >
