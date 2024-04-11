@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import WorkComponent from './components/WorkComponent';
 import PlayComponent from './components/PlayComponent';
 import StudyComponent from './components/StudyComponent';
@@ -8,26 +8,25 @@ import SelfCareComponent from './components/SelfCareComponent';
 import InfoComponent from './components/InfoComponent';
 
 function App() {
-  // You can use axios to fetch the data here if needed
+  const [selectedTimeframe, setSelectedTimeframe] = useState('Daily');
 
   return (
     <div className="App">
       <div className="tracking-dashboard">
         <div className="tracking-content">
-        <InfoComponent />
-        <div className="weekly-report">
-        <div className="row-one">
-        <WorkComponent />
-          <PlayComponent />
-          <StudyComponent />
-        </div>
-        <div className="row-two">
-        <ExerciseComponent />
-          <SocialComponent />
-          <SelfCareComponent />
-        </div>
-        </div>
-          
+          <InfoComponent selectedTimeframe={selectedTimeframe} setSelectedTimeframe={setSelectedTimeframe} />
+          <div className="weekly-report">
+            <div className="row-one">
+              <WorkComponent selectedTimeframe={selectedTimeframe} />
+              <PlayComponent selectedTimeframe={selectedTimeframe} />
+              <StudyComponent selectedTimeframe={selectedTimeframe} />
+            </div>
+            <div className="row-two">
+              <ExerciseComponent selectedTimeframe={selectedTimeframe} />
+              <SocialComponent selectedTimeframe={selectedTimeframe} />
+              <SelfCareComponent selectedTimeframe={selectedTimeframe} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
