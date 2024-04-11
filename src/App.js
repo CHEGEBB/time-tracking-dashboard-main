@@ -7,9 +7,15 @@ import ExerciseIcon from "./images/icon-exercise.svg";
 import SocialIcon from "./images/icon-social.svg";
 import SelfCareIcon from "./images/icon-self-care.svg";
 import EllipsIcon from "./images/icon-ellipsis.svg";
+import {useState} from "react";
+import { useEffect } from "react";
+
+
 
 
 function App() {
+  const [data, setData] = useState({});
+
   const profilePic = require("./images/image-jeremy.png");
 
   // Hardcoded data for weekly report
