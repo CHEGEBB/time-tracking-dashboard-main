@@ -34,7 +34,7 @@ const PlayComponent = () => {
                     </div> 
                 </div> 
                 <div className = "hours" >
-                    <p> 1 hrs </p> 
+                    <p> { playData.timeframes && playData.timeframes.weekly && playData.timeframes.weekly.current } hrs </p>
                 </div> 
             </div> 
         </div>

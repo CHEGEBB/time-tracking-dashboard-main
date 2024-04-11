@@ -6,7 +6,6 @@ const WorkComponent = () => {
   const [workData, setWorkData] = useState({});
 
   useEffect(() => {
-    // Fetch data for work activity
     fetch('http://localhost:8000/0')
       .then(response => {
         if (!response.ok) {
