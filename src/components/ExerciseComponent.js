@@ -3,6 +3,22 @@ import EllipsIcon from "../images/icon-ellipsis.svg";
 import "../App";
 
 const ExerciseComponent = () => {
+    const [exerciseData, setExerciseData] = useState({});
+    useEffect(() => {
+        // Fetch data for exercise activity
+        fetch("http://example.com/data.json")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            })
+            .then((data) => {
+                const exercise = data.find((activity) => activity.title === "Exercise");
+                setExerciseData(exercise);
+            })
+            .catch((error) => console.error("Error fetching exercise data:", error));
+    }, []);
     return ( 
         <div className = "exercise-back" >
             <div className = "exercise-icon" >
