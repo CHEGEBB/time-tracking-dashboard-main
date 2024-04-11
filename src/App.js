@@ -2,6 +2,7 @@ import React from 'react';
 import WorkComponent from './components/WorkComponent';
 import PlayComponent from './components/PlayComponent';
 import StudyComponent from './components/StudyComponent';
+import ExerciseComponent from './components/ExerciseComponent';
 
 function App() {
   // You can use axios to fetch the data here if needed
@@ -13,8 +14,8 @@ function App() {
           <WorkComponent />
           <PlayComponent />
           <StudyComponent />
-          {/* <ExerciseComponent />
-          <SocialComponent />
+          <ExerciseComponent />
+          {/* <SocialComponent />
           <SelfCareComponent /> */}
         </div>
       </div>
