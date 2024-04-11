@@ -7,7 +7,7 @@ import PlayIcon from "../images/icon-play.svg";
 const PlayComponent = () => {
     const [playData, setPlayData] = useState({});
     useEffect(() => {
-        fetch("http://example.com/data.json")
+        fetch("http://localhost:8000/1")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
