@@ -1,6 +1,7 @@
 import React from 'react';
 import WorkComponent from './components/WorkComponent';
 import PlayComponent from './components/PlayComponent';
+import StudyComponent from './components/StudyComponent';
 
 function App() {
   // You can use axios to fetch the data here if needed
@@ -11,8 +12,8 @@ function App() {
         <div className="tracking-content">
           <WorkComponent />
           <PlayComponent />
-          {/* <StudyComponent />
-          <ExerciseComponent />
+          <StudyComponent />
+          {/* <ExerciseComponent />
           <SocialComponent />
           <SelfCareComponent /> */}
         </div>
