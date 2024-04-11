@@ -4,6 +4,7 @@ import PlayComponent from './components/PlayComponent';
 import StudyComponent from './components/StudyComponent';
 import ExerciseComponent from './components/ExerciseComponent';
 import SocialComponent from './components/SocialComponent';
+import SelfCareComponent from './components/SelfCareComponent';
 
 function App() {
   // You can use axios to fetch the data here if needed
@@ -21,7 +22,7 @@ function App() {
         <div className="row-two">
         <ExerciseComponent />
           <SocialComponent />
-          {/* <SelfCareComponent /> */}
+          <SelfCareComponent />
         </div>
         </div>
           
