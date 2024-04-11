@@ -7,7 +7,7 @@ const StudyComponent = () => {
     const [studyData, setStudyData] = useState({});
     useEffect(() => {
         // Fetch data for study activity
-        fetch("http://example.com/data.json")
+        fetch("http://localhost:8000/2")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");

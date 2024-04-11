@@ -6,7 +6,7 @@ import SocialIcon from "../images/icon-social.svg";
 const SocialComponent = () => {
     const [socialData, setSocialData]=useState({});
     useEffect(() =>{
-        fetch("http://example.com/data.json")
+        fetch("http://localhost:8000/4")
         .then((response) => {
             if (!response.ok) {
                 throw new Error("Network response was not ok");

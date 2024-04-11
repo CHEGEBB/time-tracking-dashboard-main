@@ -7,7 +7,7 @@ const ExerciseComponent = () => {
     const [exerciseData, setExerciseData] = useState({});
     useEffect(() => {
         // Fetch data for exercise activity
-        fetch("http://example.com/data.json")
+        fetch("http://localhost:8000/3")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
