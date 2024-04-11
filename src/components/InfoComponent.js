@@ -2,7 +2,7 @@ import React from "react";
 import Profilepic from "../images/image-jeremy.png";
 import "../App";
 
-const InfoComponent = () => {
+const InfoComponent =() => {
   return (
     <div className="info-back">
       <div className="info">
