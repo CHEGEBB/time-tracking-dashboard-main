@@ -204,6 +204,8 @@ background-color: hsl(235, 46%, 20%);
     margin: 0 auto;
     margin-top: 180px;
     margin-left: 0px;
+    display: flex;
+    flex-direction: column;
   }
   .row-one{
     display: flex;
@@ -215,6 +217,11 @@ background-color: hsl(235, 46%, 20%);
     flex-direction: column;
     gap: 20px;
     margin-top: 0px;
+  }
+  .text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   
 }

@@ -14,7 +14,10 @@ function App() {
     <div className="App">
       <div className="tracking-dashboard">
         <div className="tracking-content">
-          <InfoComponent selectedTimeframe={selectedTimeframe} setSelectedTimeframe={setSelectedTimeframe} />
+        <div className="ifo">
+        <InfoComponent selectedTimeframe={selectedTimeframe} setSelectedTimeframe={setSelectedTimeframe} />
+        </div>
+         
           <div className="weekly-report">
             <div className="row-one">
               <WorkComponent selectedTimeframe={selectedTimeframe} />
