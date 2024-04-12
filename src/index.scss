@@ -245,9 +245,6 @@ background-color: hsl(235, 46%, 20%);
     flex-direction: column;
     gap: 20px;
   }
-  .info-back{
-    width: 300px;
-  }
 
   .work-back, .play-back, .study-back, .exercise-back, .social-back, .self-back {
     @include card-back-mobile-style;
