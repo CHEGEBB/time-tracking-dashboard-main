@@ -24,6 +24,20 @@ $info-font-family: 'Rubik', sans-serif;
   z-index: 1;
   position: relative;
 }
+@mixin card-mobile-style {
+  border:0;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  height:100px;
+  margin-top: 45px;
+  background-color: hsl(235, 46%, 20%);
+  z-index: 1;
+  position: relative;
+}
 @mixin card-back-style {
   border: 0;
   border-radius: 12px;
@@ -253,9 +267,33 @@ background-color: hsl(235, 46%, 20%);
     font-size: 20px;
   }
   .work-back, .play-back, .study-back, .exercise-back, .social-back, .self-back {
-    @include card-back-style;
-    width: 100%;
-    height: 100px;
-    margin-top: 0px;
+    @include card-back-mobile-style;
+    
+   
   }
+  .work-card, .play-card, .study-card, .exercise-card, .social-card, .self-card {
+    @include card-mobile-style;
+   
+  }
+  .hours p{
+    font-size: 30px;
+    margin-top: -20px;
+  }
+  .activity p{
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .previous p{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .work-icon img, .play-icon img, .study-icon img, .exercise-icon img, .social-icon img, .self-icon img{
+    width: 50px;
+    height: 50px;
+    margin-left: 230px;
+    z-index: 0;
+    position: absolute;
+  }
+
+
 }
