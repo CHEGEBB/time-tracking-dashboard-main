@@ -130,5 +130,10 @@ $info-font-family: 'Rubik', sans-serif;
       .side-nav a {
         font-size: 14px; 
       }
+      .side-nav ul{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
     }
     
