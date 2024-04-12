@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import EllipsIcon from '../images/icon-ellipsis.svg';
 import WorkIcon from '../images/icon-work.svg';
+import '../index.scss'
 
 const WorkComponent = ({ selectedTimeframe }) => {
   const [workData, setWorkData] = useState(null);
