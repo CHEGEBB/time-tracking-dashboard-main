@@ -10,9 +10,9 @@ const WorkComponent = ({ selectedTimeframe }) => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-      })
+        setWorkData(data);
+      });
   },[]);
-
 
   return (
     <div className="work-back">
