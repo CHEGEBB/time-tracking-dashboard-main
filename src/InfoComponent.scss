@@ -120,9 +120,11 @@ $info-font-family: 'Rubik', sans-serif;
       }
       
       .side-nav {
-        margin-top: 30px;
-        margin-left: 20px;
         display: flex;
         flex-direction: row;
+        background-color: red;
+      }
+      .side-nav a {
+        font-size: 14px;
       }
     }
