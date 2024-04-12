@@ -35,13 +35,6 @@ $info-font-family: 'Rubik', sans-serif;
   
   
 }
-@mixin cardStyleHover {
-  &:hover {
-    cursor: pointer;
-    background-color: hsl(235, 45%, 61%);
-  }
-}
-
 $card-colors: (
   work: hsl(15, 100%, 70%),
   play: hsl(195, 74%, 62%),
@@ -114,7 +107,7 @@ background-color: hsl(235, 46%, 20%);
   @include card-style;
 }
  .work-card:hover,.play-card:hover, .study-card:hover, .exercise-card:hover, .social-card:hover, .self-card:hover {
-  background-color: red;
+ cursor: pointer;
 }
 
 .work-back, .play-back, .study-back, .exercise-back, .social-back, .self-back {
