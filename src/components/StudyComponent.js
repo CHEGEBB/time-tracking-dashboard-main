@@ -8,7 +8,7 @@ const StudyComponent = ({ selectedTimeframe }) => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("https://raw.githubusercontent.com/CHEGEBB/time-tracking-dashboard-main/main/data/data2.json'")
+    fetch("https://raw.githubusercontent.com/CHEGEBB/time-tracking-dashboard-main/main/data/data2.json")
       .then((res) => res.json())
       .then((data) => {
         const timeframeData = data.timeframes[selectedTimeframe.toLowerCase()];
