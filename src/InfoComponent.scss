@@ -115,7 +115,7 @@ $info-font-family: 'Rubik', sans-serif;
       
       .info-back {
         margin-left: 40px;
-        margin-top: 20px;
+        margin-top: -50px;
         width: 300px;
         height: 150px;
       }
@@ -133,7 +133,7 @@ $info-font-family: 'Rubik', sans-serif;
       .side-nav ul{
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 60px;
       }
     }
     
