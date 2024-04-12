@@ -196,7 +196,8 @@ background-color: hsl(235, 46%, 20%);
   color: hsl(236, 100%, 87%);
 }
 // mobile design using sass 
-@media screen {
+
+@media screen and (max-width: 768px){
   .tracking-dashboard{
     width: 100%;
     height: 100%;
