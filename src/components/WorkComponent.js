@@ -9,7 +9,7 @@ const WorkComponent = ({ selectedTimeframe }) => {
 
   useEffect(() => {
     setLoading(true);
-    fetch('http://localhost:8000/0')
+    fetch('https://github.com/CHEGEBB/time-tracking-dashboard-main/blob/main/data/data0.json')
       .then((res) => res.json())
       .then((data) => {
         const timeframeData = data.timeframes[selectedTimeframe.toLowerCase()];
