@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/time-tracking-dashboard-main/static/css/main.c610b431.css",
+    "main.js": "/time-tracking-dashboard-main/static/js/main.e1f2a5c0.js",
+    "static/media/image-jeremy.png": "/time-tracking-dashboard-main/static/media/image-jeremy.71cd41f11bee24c1ded3.png",
+    "static/media/icon-exercise.svg": "/time-tracking-dashboard-main/static/media/icon-exercise.3e7b028289414a13231843557ae074f7.svg",
+    "static/media/icon-social.svg": "/time-tracking-dashboard-main/static/media/icon-social.64be0c18d185740e487b8efaebb31183.svg",
+    "static/media/icon-study.svg": "/time-tracking-dashboard-main/static/media/icon-study.1f0a65e457bfa63988275be35e86407e.svg",
+    "static/media/icon-play.svg": "/time-tracking-dashboard-main/static/media/icon-play.e8d4e5699b0e441f8baf9e7692e15167.svg",
+    "index.html": "/time-tracking-dashboard-main/index.html",
+    "static/media/icon-work.svg": "/time-tracking-dashboard-main/static/media/icon-work.a3f124e593ab45ba795f6a068fe710ce.svg",
+    "static/media/icon-self-care.svg": "/time-tracking-dashboard-main/static/media/icon-self-care.a161aff589038fc7ce09296497d4cd62.svg",
+    "static/media/icon-ellipsis.svg": "/time-tracking-dashboard-main/static/media/icon-ellipsis.a57a4ac863593bb69d31b4399823f745.svg",
+    "main.c610b431.css.map": "/time-tracking-dashboard-main/static/css/main.c610b431.css.map",
+    "main.e1f2a5c0.js.map": "/time-tracking-dashboard-main/static/js/main.e1f2a5c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c610b431.css",
+    "static/js/main.e1f2a5c0.js"
+  ]
+}
