@@ -6,22 +6,13 @@ const WorkComponent = ({ selectedTimeframe }) => {
   const [workData, setWorkData] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(`http://localhost:8000/0`);
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
-        const timeframeData = data.find((activity) => activity.title === 'Work');
-        setWorkData(timeframeData);
-      } catch (error) {
-        console.error('Error fetching work data:', error);
-      }
-    };
+    fetch('http://localhost:8000/0')
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  })
 
-    fetchData();
-  }, [selectedTimeframe]);
 
   return (
     <div className="work-back">
