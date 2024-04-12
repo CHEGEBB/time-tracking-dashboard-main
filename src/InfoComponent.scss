@@ -82,3 +82,45 @@ $info-font-family: 'Rubik', sans-serif;
     border-radius: 12px;
     background-color: hsl(235, 46%, 20%);
     }
+    // mobile
+    @media screen and (max-width: 375px) {
+      .info-container {
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      
+      .profile img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+      
+      .info h1 {
+        font-size: 14px;
+        margin-left: 160px;
+      }
+      
+      .info h2 {
+        font-size: 20px;
+        margin-left: 160px;
+      }
+      
+      .info {
+        width: 300px;
+        height: 100px;
+      }
+      
+      .info-back {
+        margin-left: 10px;
+        margin-top: 20px;
+        width: 300px;
+        height: 150px;
+      }
+      
+      .side-nav {
+        margin-top: 30px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+      }
+    }
