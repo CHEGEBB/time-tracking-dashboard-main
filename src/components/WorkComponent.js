@@ -9,10 +9,20 @@ const WorkComponent = ({ selectedTimeframe }) => {
     fetch('http://localhost:8000/0')
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        setWorkData(data);
+        if (Array.isArray(data)) {
+          const filteredData = data.map(item => ({
+            ...item,
+            timeframes: item.timeframes.find(timeframe => timeframe.title === selectedTimeframe)
+          }));
+          setWorkData(filteredData);
+        } else {
+          setWorkData(data);
+        }
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
       });
-  },[]);
+  }, [selectedTimeframe]);
 
   return (
     <div className="work-back">
