@@ -195,3 +195,159 @@ background-color: hsl(235, 46%, 20%);
   margin-top: 10px;
   color: hsl(236, 100%, 87%);
 }
+// mobile design using sass 
+@media screen {
+  .tracking-dashboard{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 180px;
+    margin-left: 0px;
+  }
+  .profile img{
+    margin-left: 20px;
+  }
+  .info-back{
+    margin-left: 10px;
+    margin-top: 40px;
+    width: 250px;
+    height: 450px;
+    border-radius: 12px;
+    background-color: hsl(235, 46%, 20%);
+  }
+  .info h1{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-family:$info-font-family;
+    font-weight: 300;
+    color: hsl(236, 100%, 87%);
+  
+  }
+  .info h2{
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-family:$info-font-family;
+    font-weight: 300;
+  }
+  .work-icon img, .play-icon img, .study-icon img, .exercise-icon img, .social-icon img, .self-icon img{
+    width: 68px;
+    height: 70px;
+    margin-left: 135px;
+    z-index: 0;
+    position: absolute;
+  }
+  .hours p{
+    font-size: 45px;
+    font-family:$info-font-family;
+    font-weight: 300;
+    margin-top: 20px;
+  
+  }
+  .activity p{
+    font-size: 18px;
+    font-family:$info-font-family;
+    font-weight: 300;
+    margin-top: 10px;
+    width: 250px;
+    height: 20px;
+   
+  }
+  .activity{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+  }
+  .previous p{
+    font-size: 15px;
+    font-family:$info-font-family;
+    font-weight: 400;
+    margin-top: 10px;
+    color: hsl(236, 100%, 87%);
+  }
+  .work-card, .play-card, .study-card, .exercise-card, .social-card, .self-card {
+    @include card-style;
+  }
+   .work
+  .work-back, .play-back, .study-back, .exercise-back, .social-back, .self-back {
+    @include card-back-style;
+  }
+  @each $card, $color in $card-colors {
+    .#{$card}-back {
+      background-color: $color;
+    }
+  }
+  .info{
+    width: 250px;
+    height: 300px;
+    border-radius: 12px;
+    background-color: hsl(246, 80%, 60%);
+  }
+  .times{
+    margin-top:80px;
+    margin-left: 40px;
+    display: $Cards-display;
+    flex-direction: column;
+    gap: 10px;
+    font-family: $font-family;
+    font-size: 18px;
+    color: hsl(236, 100%, 87%);
+  }
+  .daily:hover, .weekly:hover, .monthly:hover{
+    cursor: pointer;
+    color: #fff;
+  }
+  .info h1{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-family:$info-font-family;
+    font-weight: 300;
+    color: hsl(236, 100%, 87%);
+  
+  }
+  .info h2{
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-family:$info-font-family;
+    font-weight: 300;
+  }
+  .work-icon img, .play-icon img, .study-icon img, .exercise-icon img, .social-icon img, .self-icon img{
+    width: 68px;
+    height: 70px;
+    margin-left: 135px;
+    z-index: 0;
+    position: absolute;
+  }
+  .hours p{
+    font-size: 45px;
+    font-family:$info-font-family;
+    font-weight: 300;
+    margin-top: 20px;
+  
+  }
+  .activity p{
+    font-size: 18px;
+    font-family:$info-font-family;
+    font-weight: 300;
+    margin-top: 10px;
+    width: 250px;
+    height: 20px;
+   
+  }
+  .activity{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+  }
+  .previous p{
+    font-size: 15px;
+    font-family:$info-font-family;
+    font-weight: 400;
+    margin-top: 10px;
+    color: hsl(236, 100%, 87%);
+  }
+  
+}
