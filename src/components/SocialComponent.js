@@ -8,7 +8,7 @@ const SocialComponent = ({ selectedTimeframe }) => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:8000/4")
+    fetch("https://raw.githubusercontent.com/CHEGEBB/time-tracking-dashboard-main/main/data/data4.json'")
       .then((res) => res.json())
       .then((data) => {
         const timeframeData = data.timeframes[selectedTimeframe.toLowerCase()];
