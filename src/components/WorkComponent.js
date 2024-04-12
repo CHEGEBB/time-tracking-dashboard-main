@@ -4,25 +4,26 @@ import WorkIcon from '../images/icon-work.svg';
 
 const WorkComponent = ({ selectedTimeframe }) => {
   const [workData, setWorkData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true);
     fetch('http://localhost:8000/0')
       .then((res) => res.json())
       .then((data) => {
-        if (Array.isArray(data)) {
-          const filteredData = data.map(item => ({
-            ...item,
-            timeframes: item.timeframes.find(timeframe => timeframe.title === selectedTimeframe)
-          }));
-          setWorkData(filteredData);
-        } else {
-          setWorkData(data);
-        }
+        const timeframeData = data.timeframes[selectedTimeframe.toLowerCase()];
+        setWorkData(timeframeData);
+        setLoading(false);
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
+        setLoading(false);
       });
   }, [selectedTimeframe]);
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <div className="work-back">
