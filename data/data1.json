@@ -1,0 +1,17 @@
+{
+    "title": "Play",
+    "timeframes": {
+      "daily": {
+        "current": 1,
+        "previous": 2
+      },
+      "weekly": {
+        "current": 10,
+        "previous": 8
+      },
+      "monthly": {
+        "current": 23,
+        "previous": 29
+      }
+    }
+  }
